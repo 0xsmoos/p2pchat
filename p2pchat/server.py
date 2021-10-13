@@ -8,10 +8,9 @@ import time
 
 
 s = socket.socket()
-host = socket.gethostname()
 print("server will start on host; ", host)
-port = 8080
-s.bind((host,port))
+port = 80
+s.bind(('',port))
 
 print("")
 
